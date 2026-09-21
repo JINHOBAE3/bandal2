@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08080b" />
+    <title>Dust Reciever 2077</title>
+    <meta
+      name="description"
+      content="Dust Reciever 2077 ☏⁺ by YUNG DECKK"
+    />
+    <style>
+      :root {
+        --ink: #f5f3ef;
+        --muted: #aeaeb8;
+        --signal: #baff31;
+        --line: rgba(245, 243, 239, 0.22);
+        --page: #08080b;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        overflow-x: hidden;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 8% 2%, rgba(186, 255, 49, 0.14), transparent 28rem),
+          radial-gradient(circle at 95% 88%, rgba(126, 94, 255, 0.2), transparent 32rem),
+          var(--page);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .page {
+        width: min(100% - 40px, 980px);
+        margin: 0 auto;
+        padding: 26px 0 44px;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid var(--line);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .status { color: var(--signal); }
+
+      main {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 350px;
+        align-items: center;
+        gap: 72px;
+        min-height: calc(100vh - 136px);
+        padding: 50px 0;
+      }
+
+      .eyebrow {
+        margin: 0 0 18px;
+        color: var(--signal);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+      }
+
+      h1 {
+        max-width: 650px;
+        margin: 0;
+        font-size: clamp(52px, 8vw, 104px);
+        line-height: 0.84;
+        letter-spacing: -0.075em;
+        text-transform: uppercase;
+      }
+
+      .artist {
+        margin: 26px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+        letter-spacing: 0.08em;
+      }
+
+      .copy {
+        max-width: 450px;
+        margin: 60px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 24px;
+        padding-bottom: 7px;
+        color: var(--ink);
+        border-bottom: 1px solid var(--signal);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+      }
+
+      .link:hover { color: var(--signal); }
+
+      .player {
+        position: relative;
+        width: 350px;
+      }
+
+      .player::before {
+        position: absolute;
+        z-index: -1;
+        inset: -14px 14px 14px -14px;
+        border: 1px solid var(--line);
+        content: "";
+      }
+
+      iframe {
+        display: block;
+        width: 350px;
+        height: 470px;
+        border: 0;
+        background: #fff;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        color: var(--muted);
+        font-size: 12px;
+        letter-spacing: 0.06em;
+      }
+
+      @media (max-width: 760px) {
+        .page { width: min(100% - 32px, 430px); }
+        main { grid-template-columns: 1fr; gap: 56px; padding: 58px 0 72px; }
+        h1 { font-size: clamp(52px, 17vw, 78px); }
+        .copy { margin-top: 38px; }
+        .player, iframe { width: 100%; }
+        iframe { height: 470px; }
+        footer { flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <span>YUNG DECKK</span>
+        <span class="status">Signal received</span>
+      </header>
+
+      <main>
+        <section>
+          <p class="eyebrow">album transmission / 2077</p>
+          <h1>Dust<br />Reciever<br />2077</h1>
+          <p class="artist">YUNG DECKK ☏⁺</p>
+          <p class="copy">
+            Play the full record here, or open Bandcamp to support the artist.
+          </p>
+          <a class="link" href="https://brettwrld.bandcamp.com/album/dust-reciever-2077" target="_blank" rel="noreferrer">
+            Open in Bandcamp ↗
+          </a>
+        </section>
+
+        <section class="player" aria-label="Bandcamp album player">
+          <iframe
+            src="https://bandcamp.com/EmbeddedPlayer/album=1593614866/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+            seamless
+            title="Dust Reciever 2077 by YUNG DECKK"
+          >
+            <a href="https://brettwrld.bandcamp.com/album/dust-reciever-2077">Dust Reciever 2077 ☏⁺ by YUNG DECKK</a>
+          </iframe>
+        </section>
+      </main>
+
+      <footer>
+        <span>Embedded via Bandcamp</span>
+        <span>© YUNG DECKK</span>
+      </footer>
+    </div>
+  </body>
+</html>
